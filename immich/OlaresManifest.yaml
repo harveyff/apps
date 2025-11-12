@@ -6,7 +6,7 @@ metadata:
   description: High performance self-hosted photo and video management solution.
   appid: immich
   title: Immich
-  version: '1.0.10'
+  version: '1.0.11'
   categories:
   - Lifestyle
   - Entertainment
@@ -19,7 +19,7 @@ entrances:
   authLevel: private
   openMethod: window
 spec:
-  versionName: '2.2.2'
+  versionName: '2.2.3'
   featuredImage: https://app.cdn.olares.com/appstore/immich/01.png
   promoteImage:
   - https://app.cdn.olares.com/appstore/immich/01.png
@@ -51,13 +51,17 @@ spec:
     Wondering where a particular photo was taken? Immich adds location information to your media.
 
   upgradeDescription: |
-    Upgrade app version to v2.2.2
+    Upgrade app version to v2.2.3
     
     Bug fixes:
-    fix(web): mobile scrubber on page load by @danieldietzler in #23488
-    fix(mobile): disable asset sync clean up for more investigation by @alextran1502 in #23531
-
-    Full release note at: https://github.com/immich-app/immich/releases/tag/v2.2.2
+    fix(ml): ocr inputs not resized correctly by @mertalev in #23541
+    fix(web): search bar accessibility by @ben-basten in #23550
+    fix: exif gps parsing of malformed data by @danieldietzler in #23551
+    chore: correct hosted isar paths in fdroid_build_isar.sh by @gereeter in #23529
+    fix(mobile): handle empty original filename by @skatsubo in #23469
+    fix(mobile): ignore patch releases for app version alerts by @bwees in #23565
+    
+    Full release note at: https://github.com/immich-app/immich/releases/tag/v2.2.3
 
   developer: immich-app
   website: https://immich.app
